@@ -34,12 +34,12 @@ func dinner(f []string) string {
 		}
 	}
 
-	if f[0] == "c" {
+	if f[0] == "-c" {
 		ii = addCheese(ii)
 	}
 
 	for _, i := range f {
-		if i == "c" {
+		if i == "-c" {
 			continue
 		}
 		ii = append(ii, i)
