@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
+	"os"
 )
 
 func main() {
-	fmt.Println(dinner([]string{"c", "steamed", "pork", "carrots"}))
+	fmt.Println(dinner(os.Args[1:]))
 }

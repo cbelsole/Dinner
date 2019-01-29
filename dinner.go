@@ -17,11 +17,11 @@ import (
 // What happens if they pass multiple cooking methods. Make a comment and ask the customer about it.
 // If statement at the bottom is a huge red flag since it is all repeatable code and it is mixing areas of concern. 1 set is setting the method of cooking another is setting the protein and another is setting the rest.
 
-func dinner(f []string) interface{} {
+func dinner(f []string) string {
 	var h bool
 	ii := make([]string, 0)
 	if INTERNAL {
-		h = true
+		h = false
 	} else {
 		h = time.Date(time.Now().Year(), time.Now().Month()+1, 0, 0, 0, 0, 0, time.UTC).Day()/time.Now().Day() > 2
 	}
@@ -40,9 +40,9 @@ func dinner(f []string) interface{} {
 
 	for _, i := range f {
 		if i == "c" {
-		} else {
-			ii = append(ii, i)
+			continue
 		}
+		ii = append(ii, i)
 	}
 
 	return cook(ii)
@@ -53,7 +53,7 @@ func addCheese(s []string) []string {
 	return s
 }
 
-func cook(f []string) interface{} {
+func cook(f []string) string {
 	var m, p string
 	var rest []string
 	for _, i := range f {
