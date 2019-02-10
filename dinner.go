@@ -6,17 +6,6 @@ import (
 	"time"
 )
 
-// discover the bug if the slice is empty
-// extract the hard to understand date logic and rename it something more semantic like is first half of month
-// Cannot rename flag as that would be a non passive change for your users
-// Test flag can be extracted, even better date can be passed in.
-// The date is not a true half since it is only to the day precision, but you are not here to fix the logic just make it more readable
-// f contains flags and ingredients. split these out into 2 variables
-// extract create isMeat function and extract the `if h` code
-// hunting code smells like a truffle pig
-// What happens if they pass multiple cooking methods. Make a comment and ask the customer about it.
-// If statement at the bottom is a huge red flag since it is all repeatable code and it is mixing areas of concern. 1 set is setting the method of cooking another is setting the protein and another is setting the rest.
-
 func dinner(f []string) string {
 	var h bool
 	ii := make([]string, 0)

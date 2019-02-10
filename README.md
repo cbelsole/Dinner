@@ -1,6 +1,6 @@
 # Dinner
 
-An exercise in refactoring. To be used to teach how to approach code 1. you know nothing about and 2. is breaking right now. Like all good code it does not fail all the time so come back later and it might blow up on you.
+This repo was created as the practical portion that pairs with this [skillshare course](https://www.skillshare.com/classes/Code-Refactoring-Paying-down-tech-debt/701604212) on code refactoring. Please feel free to fork/clone this repo and follow along with the class. With the successful completion of the course will be able to use this repo as an example of the skills you learned.
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ An exercise in refactoring. To be used to teach how to approach code 1. you know
 ## Run the code
 
 ```
-go run ./...
+go run ./... fried chicken beans
 ```
 
 ## Test the code
